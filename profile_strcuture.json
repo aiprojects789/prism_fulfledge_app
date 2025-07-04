@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "userId": "",
+    "profileVersion": "",
+    "lastUpdated": "",
+    "intentCategory": ""
+  },
+  "generalprofile": {
+    "corePreferences": {
+      "noveltySeeking": {
+        "description": "Reflects how open the user is to trying new experiences and content.",
+        "value": ""
+      },
+      "leisureMotivation": {
+        "description": "Describes what drives the user's behavior and preferences during free time.",
+        "value": ""
+      },
+      "decisionStyle": {
+        "description": "Indicates whether the user makes decisions spontaneously or deliberately.",
+        "value": ""
+      },
+      "semanticTraits": {
+        "description": "Captures soft personality traits or tendencies that influence content enjoyment.",
+        "values": []
+      }
+    },
+    "userContextAndLifestyle": {
+      "userLocation": {
+        "description": "Captures the user's current city, country, and neighborhood to localize recommendations.",
+        "specificCity": "",
+        "specificArea": "",
+        "specificNeibhourhood": ""
+      },
+      "householdComposition": {
+        "description": "Provides insight into living arrangement, influencing content type and format.",
+        "values": []
+      },
+      "typicalCompanions": {
+        "movies": "",
+        "dining": "",
+        "travel": ""
+      },
+      "timeAvailability": {
+        "weekdayEvening": {
+          "description": "Indicates availability on weekday evenings for relevant content suggestions.",
+          "value": ""
+        },
+        "weekend": {
+          "description": "Captures typical weekend availability for recommendations.",
+          "value": ""
+        },
+        "forTravel": {
+          "description": "Estimates how often the user is free for leisure travel.",
+          "value": ""
+        }
+      },
+      "typicalEnergyLevels": {
+        "afterWork": {
+          "description": "Captures energy level after a workday to tailor suggestions.",
+          "value": ""
+        },
+        "weekends": {
+          "description": "Describes energy or activity level on weekends to align content or outing types.",
+          "value": ""
+        }
+      },
+      "practicalConstraints": {
+        "description": "Notes any logistical, financial, or environmental constraints that affect user choices.",
+        "values": []
+      },
+      "lifeStageNotes": {
+        "description": "Captures life status like studying, parenting, early-career, etc., to contextualize preferences.",
+        "values": [""]
+      },
+      "accessibilityNeeds": {
+        "description": "Captures any physical, sensory, or contextual accessibility needs to improve inclusion.",
+        "values": []
+      }
+    }
+  },
+  "recommendationProfiles": {
+    "moviesAndTV": {
+      "primaryMotivations": {
+        "description": "Why the user watches — relaxation, learning, connection, etc.",
+        "values": []
+      },
+      "genrePreferences": {
+        "loves": { "description": "Genres the user is most passionate about and frequently watches.", "values": [] },
+        "likes": { "description": "Genres the user often watches but with less passion than 'loves'.", "values": [] },
+        "dislikes": { "description": "Genres the user typically avoids.", "values": [] },
+        "curiousAbout": { "description": "Genres the user hasn't explored but is interested in trying.", "values": [] },
+        "exceptions": { "description": "Outliers — shows/movies liked despite genre aversion.", "values": [] }
+      },
+      "thematicInterests": { "description": "Themes or storylines the user finds engaging (e.g. survival, romance, justice).", "values": [] },
+      "viewingStyle": {
+        "preferred": { "description": "How the user usually likes to experience content — immersive, casual, etc.", "values": [] },
+        "occasional": { "description": "Secondary or infrequent content preferences.", "values": [] },
+        "platformPreference": { "description": "Preferred streaming platforms for content access.", "values": [] }
+      },
+      "contentCharacteristics": {
+        "pacing": { "description": "Preference for story speed and rhythm.", "value": "" },
+        "complexity": { "description": "Preference for story depth, layers, and intellectual challenge.", "value": "" },
+        "emotionalTone": { "description": "Emotions the user seeks through media (uplifting, thrilling, etc.).", "values": [] },
+        "visualStyle": { "description": "User's aesthetic preferences in production style.", "values": [] },
+        "characterFocus": { "description": "Whether user prefers character-driven or plot-driven narratives.", "value": "" }
+      },
+      "dealBreakersContent": { "description": "Topics, formats, or themes the user avoids due to taste or values.", "values": [] },
+      "noveltySeekingMedia": { "description": "Desire for novel or unique content experiences.", "value": "" },
+      "influenceOfAwardsCritics": { "description": "Measures how much critical acclaim influences user decisions.", "value": "" },
+      "lengthPreference": { "movies": { "description": "Preferred movie length.", "value": "" }, "series": { "description": "Preferred series duration or structure.", "value": "" } },
+      "rewatchability": { "description": "Whether user enjoys rewatching content.", "value": "" },
+      "favoriteActorsDirectorsKeywords": { "description": "Captures actors or directors the user admires — useful for influence-based suggestions.", "values": [] },
+      "favoriteTitlesKeywords": { "description": "User’s top-rated shows/movies — used to calibrate recommendations.", "values": [] },
+      "memory": {
+        "contradictions": { "description": "Exceptions to usual preferences — useful for nuanced recommendation boundaries.", "values": [] },
+        "recentDecisions": { "description": "Latest content choice and its context — used to infer mood or situational preference.", "values": [] },
+        "seenTitles": {
+          "liked": { "description": "Movies or TV shows the user has enjoyed — used to infer genre and theme preferences.", "values": [] },
+          "disliked": { "description": "Movies or shows the user didn't enjoy — helps avoid similar content.", "values": [] },
+          "neutral": { "description": "Content the user felt indifferent about — used to avoid lukewarm recommendations.", "values": [] },
+          "unknown": { "description": "How often user forgets content they've already watched — relates to memorability.", "values": [] },
+          "source": { "description": "How the user finds new content — for surfacing discovery-style matches.", "value": "" }
+        }
+      }
+    },
+    "foodAndDining": {
+      "primaryMotivations": { "description": "Captures underlying reasons for food decisions to guide suggestions.", "values": [] },
+      "cuisinePreferences": {
+        "loves": { "description": "Highlights top cuisine preferences to prioritize in recommendations.", "values": [] },
+        "likes": { "description": "Establishes regular cuisine preferences beyond top favorites.", "values": [] },
+        "dislikes": { "description": "Helps exclude cuisine types that might lead to negative experiences.", "values": [] },
+        "curiousAbout": { "description": "Genres the user hasn't explored but is interested in trying.", "values": [] }
+      },
+      "diningStyle": { "preferred": { "description": "Indicates ambiance and formality of preferred restaurants.", "values": [] }, "occasional": [], "rarely": [] },
+      "atmospherePriorities": { "ambianceVibe": { "description": "Describes the overall mood or feel of the place", "value": "" }, "noiseLevel": { "description": "Indicates how quiet or noisy the place typically is", "value": "" }, "decorStyle": { "description": "A list of design or interior styles present in the space", "values": [] }, "serviceQuality": { "description": "Represents the level of attentiveness, professionalism, and friendliness of staff", "value": "" } },
+      "flavorProfile": { "spiceLevel": { "description": "Adjusts recommendations based on spice tolerance and preference.", "value": "" }, "sweetness": { "description": "Helps refine dessert and savory flavor balancing.", "value": "" }, "savoryUmami": { "description": "Guides depth of flavor recommendations for main meals.", "value": "" }, "sourTangy": { "description": "Customizes for acidity preference in dishes or condiments.", "value": "" }, "bitternessTolerance": { "description": "Tailors recommendations based on your comfort with bitter flavors like dark chocolate, coffee, or certain greens.", "value": "" } },
+      "dealBreakersDietary": { "allergies": { "description": "Identifies ingredients that must be avoided to ensure safety.", "values": [] }, "restrictions": { "description": "Supports adherence to dietary lifestyle or belief-based choices.", "values": [] }, "strongAversions": { "description": "Excludes items that cause discomfort or unpleasantness.", "values": [] } },
+      "noveltySeekingFood": { "description": "Measures openness to experimental and diverse dining options.", "value": "" },
+      "priceSensitivity": { "description": "Controls for pricing expectations in suggestions.", "value": "" },
+      "contextualPreferences": { "occasion": { "description": "Indicates the reason or event behind the meal choice", "value": "" }, "currentMood": { "description": "Captures emotional state to personalize food suggestions", "value": "" } },
+      "favoriteDishesKeywords": { "description": "Provides anchors for dishes the user always enjoys.", "values": [] },
+      "cookingInterest": { "description": "Reflects the user's willingness or enthusiasm for preparing meals at home", "value": "" },
+      "restaurantExperience": { "favorites": { "description": "A list of restaurants the user particularly enjoyed and would revisit.", "values": [] }, "visited": { "description": "Restaurants the user has tried before, regardless of whether they liked them.", "values": [] }, "disliked": { "description": "Restaurants the user did not enjoy and prefers to avoid in future recommendations.", "values": [] } },
+      "mobilityAndDeliveryPreferences": { "willingnessToTravel": { "description": "Indicates how far a user is willing to go for a dining experience — useful for local vs. destination dining suggestions.", "value": "" }, "frequentDeliveryUsage": { "description": "Boolean value indicating if the user regularly orders food for delivery.", "value": false }, "preferredDeliveryApps": { "description": "Lists food delivery platforms the user typically uses or trusts.", "values": ["Deliveroo","Just Eat","Glovo"] }, "avoidIfNotOnDeliveryApp": { "description": "Boolean value specifying whether the user wants to exclude restaurants that aren’t available on their chosen apps.", "value": false } }
+    },
+    "travel": {
+      "primaryMotivations": { "description": "Core reason the user travels — adventure, relaxation, culture, family, etc.", "values": [] },
+      "destinationTypePreferences": { "loves": { "description": "Destination types the user is most passionate about — urban, natural, cultural, etc.", "values": [] }, "likes": { "description": "Destinations the user likes regularly.", "values": [] }, "dislikes": { "description": "Places the user avoids.", "values": [] }, "curiousAbout": { "description": "Emerging interests in new destination types.", "values": [] } },
+      "pastFavoriteDestinationsKeywords": { "description": "Specific destinations the user enjoyed and why.", "values": [] },
+      "dreamDestinationsKeywords": { "description": "Bucket‑list places and the reasons behind the user’s aspirations.", "values": [] },
+      "activityPriorities": { "culturalImmersion": { "description": "User’s interest in authentic cultural experiences.", "values": [] }, "adventureSeeking": { "description": "Willingness to engage in high‑energy or risk‑based experiences.", "values": [] }, "historicalExploration": { "description": "Interest in history‑focused travel and heritage sites.", "value": "" }, "natureEngagement": { "description": "Preference for outdoor, scenic, or eco‑tourism activities.", "values": [] }, "foodFocus": { "description": "Significance of culinary exploration.", "value": "" }, "relaxationLevel": { "description": "Value placed on rest and rejuvenation.", "value": "" } },
+      "travelStyle": { "preferred": { "description": "General style of travel the user finds most fulfilling.", "values": [] }, "occasional": { "description": "Secondary or occasional travel preferences.", "values": [] }, "rarely": { "description": "Frequency of travel.", "value": "" } },
+      "accommodationStyle": { "description": "Preferred lodging types.", "values": [] },
+      "budgetLevel": { "description": "Usual spending range for travel.", "value": "" },
+      "tripDurationPreference": { "description": "Preferred trip length.", "value": "" },
+      "travelCompanions": { "description": "Typical travel companions.", "values": [] },
+      "transportationPreferences": { "description": "Preferred modes of transport.", "values": [] },
+      "paceOfTravel": { "description": "Desired activity/rest balance.", "value": "" },
+      "dealBreakersTravel": { "description": "Strong deterrents: safety, weather, amenities, etc.", "values": [] },
+      "noveltySeekingTravel": { "description": "Openness to novel travel experiences.", "value": "" }
+    }
+  },
+  "simulationPreferences": {
+    "afterWork": {
+      "energyLevel": "",
+      "contentPreference": ""
+    },
+    "weekendSolo": {
+      "energyLevel": "",
+      "contentPreference": ""
+    },
+    "withPartner": {
+      "contentFilter": [""],
+      "preferenceDriver": ""
+    },
+    "traveling": {
+      "contentPreference": ""
+    }
+  }
+}
