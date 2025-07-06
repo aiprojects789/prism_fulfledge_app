@@ -33,7 +33,7 @@ openai_key = st.secrets["api"]["key"]
 # defining function to load profile
 def load_user_profile():
     """Loads and parses the user profile from Firebase"""
-    doc_ref = db.collection("profiles").document("current_user")
+    doc_ref = db.collection("user_collection").document("profile_strcuture.json")
     doc = doc_ref.get()
 
     if doc.exists:
@@ -148,30 +148,3 @@ def generate_recommendations(user_profile, user_query):
     
     return response.choices[0].message.content
 
-# def save_recommendations(recommendations, filename="personalized_recommendations.txt"):
-#     """Saves recommendations with nice formatting"""
-#     with open(filename, 'w') as f:
-#         f.write("Personalized Recommendations\n\n")
-#         f.write(recommendations)
-#     print(f"Saved to {filename}")
-
-
-
-# user_input = st.chat_input("Type your query...")
-
-# if __name__ == "__main__":
-#     # 1. Load the profile
-#     profile = load_user_profile()
-    
-#     # 2. Get user query (in production, replace with input() or GUI)
-#     user_query = user_input
-    
-#     # 3. Generate recommendations
-#     print("🔍 Analyzing profile and searching for the best options...")
-#     recs = generate_recommendations(profile, user_query)
-    
-
-    # # 4. Save and show
-    # save_recommendations(recs)
-    # print("\nGenerated Recommendations:")
-    # print(textwrap.fill(recs, width=80))
